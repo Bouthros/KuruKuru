@@ -1,0 +1,2 @@
+# KuruKuru
+Rip off KuruKuruKururin
