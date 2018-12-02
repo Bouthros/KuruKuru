@@ -65,15 +65,19 @@ public class CompletePlayerController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision)
     {
 
-        //if (!collision.collider.gameObject.CompareTag("PickUp") && count < 3)
-        //{
+        if (!collision.collider.gameObject.CompareTag("Vortex") && count < 3)
+        {
             rotation = -rotation;
             count++;
 
             SetColisionText();
+        }
 
-        //}
-        /*else*/ if (count == 3)
+        if (!collision.collider.gameObject.CompareTag("Vortex") && count < 3)
+
+            //}
+            /*else*/
+            if (count == 3)
         {
             lostText.text = "You died!";
             transform.Rotate(Vector3.zero);

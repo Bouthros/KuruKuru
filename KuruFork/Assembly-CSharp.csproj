@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\CircularGravity.cs" />
     <Compile Include="Assets\Script\CompleteCameraController.cs" />
     <Compile Include="Assets\Script\CompletePlayerController.cs" />
+    <Compile Include="Assets\Script\MagnetScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Pierre/Devs/KuruKuru/KuruFork/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
