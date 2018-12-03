@@ -665,6 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attractedTo: {fileID: 404156031}
   strengthOfAttraction: 2
+  maxRange: 5
 --- !u!1001 &927542234
 Prefab:
   m_ObjectHideFlags: 0
