@@ -21,12 +21,14 @@ GameObject:
   - component: {fileID: 4498488397442080}
   - component: {fileID: 212662988933840624}
   - component: {fileID: 50644782779360828}
-  - component: {fileID: 114363632190923288}
-  - component: {fileID: 58463664149852380}
   - component: {fileID: 61790206495974068}
+  - component: {fileID: 58977770561361172}
+  - component: {fileID: 114377864671400184}
+  - component: {fileID: 114573748720046026}
+  - component: {fileID: 114998261515899218}
   m_Layer: 0
   m_Name: Player_Kuru
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,13 +66,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58463664149852380
+--- !u!58 &58977770561361172
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1683520442651292}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -78,7 +80,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.15
+  m_Radius: 0.24
 --- !u!61 &61790206495974068
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -102,9 +104,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 0.1}
+  m_Size: {x: 5.28, y: 0.22}
   m_EdgeRadius: 0
---- !u!114 &114363632190923288
+--- !u!114 &114377864671400184
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,11 +117,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfaa6c26fe6ae5469a4865cbd27e471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  countText: {fileID: 0}
-  winText: {fileID: 0}
+  speed: 100
   countColisionText: {fileID: 0}
   lostText: {fileID: 0}
+--- !u!114 &114573748720046026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683520442651292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b250f1346c62240a1f44bb2dfd54bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114998261515899218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683520442651292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252eb0cc0bbe5d5408db4be71c3228b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractedTo: {fileID: 0}
+  strengthOfAttraction: 2
+  maxRange: 5
 --- !u!212 &212662988933840624
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -152,8 +177,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1338097493
-  m_SortingLayer: 0
+  m_SortingLayerID: -1743434735
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5113f2f02f168c344a4ccc86e33fb351, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

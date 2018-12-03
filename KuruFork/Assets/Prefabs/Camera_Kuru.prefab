@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 92680757523182984}
   - component: {fileID: 124790752242629626}
   - component: {fileID: 81202352085715648}
-  - component: {fileID: 114446251949573092}
+  - component: {fileID: 114306156016533298}
   m_Layer: 0
   m_Name: Camera_Kuru
   m_TagString: MainCamera
@@ -98,7 +98,7 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1284882294534288}
   m_Enabled: 1
---- !u!114 &114446251949573092
+--- !u!114 &114306156016533298
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
